@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:gravity="end"
+        app:title="MyDialer"
+        app:titleTextColor="@color/black" />
+
+    <TextView
+        android:id="@+id/pantalla"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:text="0" />
+
+    <GridLayout
+        android:id="@+id/nums"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pantalla"
+        android:layout_marginTop="0dp"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:paddingLeft="56dp">
+
+        <Button
+            android:id="@+id/num1"
+            style="@style/botonesNum"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/num2"
+            style="@style/botonesNum"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/num3"
+            style="@style/botonesNum"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/num4"
+            style="@style/botonesNum"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/num5"
+            style="@style/botonesNum"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/num6"
+            style="@style/botonesNum"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/num7"
+            style="@style/botonesNum"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/num8"
+            style="@style/botonesNum"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/num9"
+            style="@style/botonesNum"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/asterisco"
+            style="@style/botonesNum"
+            android:text="*"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/num0"
+            style="@style/botonesNum"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/numeral"
+            style="@style/botonesNum"
+            android:text="#" />
+
+        <Button
+            android:id="@+id/Erase"
+            style="@style/botonesNum"
+            android:layout_gravity="center"
+            android:text="DEL"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/llamada"
+            style="@style/botonesNum"
+            android:layout_gravity="center"
+            android:background="@drawable/icon"
+            android:text="" />
+
+        <ImageButton
+            android:id="@+id/borrar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/Transparent"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/eliminar" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nums"
+        android:layout_margin="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/SendMsj"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:layout_marginVertical="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:text="Enviar Mensaje" />
+
+        <Button
+            android:id="@+id/addcontact"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:layout_marginVertical="30sp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:text="Añadir contacto" />
+
+    </LinearLayout>
+</RelativeLayout>
